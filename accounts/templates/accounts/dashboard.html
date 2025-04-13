@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="dashboard-container">
+  <div class="dashboard-header">
+    <h1>Welcome, {{ user.first_name|default:user.username }} 🎉</h1>
+    <p>Here’s your UniVerse Events Dashboard.</p>
+    <a href="{% url 'logout' %}" class="logout-button">Logout</a>
+  </div>
+
+  <div class="dashboard-cards">
+    <div class="card">
+      <h3>Upcoming Events</h3>
+      <p>Check out the latest university events</p>
+    </div>
+    <div class="card">
+      <h3>Your Registrations</h3>
+      <p>View and manage your registered events</p>
+    </div>
+    <div class="card">
+      <h3>Profile</h3>
+      <p>Update your profile information</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

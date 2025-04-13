@@ -1,0 +1,129 @@
+/* Background and global style */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Glassmorphic login/register form container */
+form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px 40px;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 350px;
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Input labels */
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
+  background: #eee;
+  color: #000;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 10px;
+  background: #4a00e0;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #8e2de2;
+}
+
+/* Register link */
+a {
+  color: #fff;
+  text-decoration: underline;
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+}
+
+a:hover {
+  color: #ddd;
+}
+/* Dashboard Styles */
+.dashboard-container {
+  padding: 50px;
+  text-align: center;
+  color: #333;
+}
+
+.dashboard-header {
+  margin-bottom: 40px;
+}
+
+.logout-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logout-button:hover {
+  background-color: #dc2626;
+}
+
+.dashboard-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #f8fafc;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #1d4ed8;
+  margin-bottom: 10px;
+}
